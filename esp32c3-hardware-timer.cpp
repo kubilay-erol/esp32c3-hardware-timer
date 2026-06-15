@@ -1,7 +1,6 @@
 
 #include<cstdint>
 
-
 constexpr uint64_t num = 3;
 
 class Time {
@@ -38,7 +37,7 @@ public:
     }
 
     bool is_delay_complete(uint64_t delay_seconds, uint64_t n) {
-     // Check if the elapsed time has reached or exceeded the target delay
+
         if (get_time(n) >= delay_seconds) {
             return true; 
         }
